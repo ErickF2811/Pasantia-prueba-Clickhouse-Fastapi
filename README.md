@@ -6,7 +6,8 @@ Entendido. Voy a relacionar cada componente con los requerimientos establecidos 
 
 1. Clona este repositorio.
 ### Ejecucion de programa 
-Ejecuta `docker-compose build` para levantar los servicios.
+1. Ejecuta `docker-compose build` para levantar los servicios.
+
 2. Ejecuta `docker-compose up -d` para levantar los servicios.
 3. Accede a `http://localhost:8000/` para interactuar con el API del microservicio.
 3. Accede a `http://localhost:8000/consulta_clickhouse` para interactuar con el API del microservicio mostrando la base de datos clickhouse.
