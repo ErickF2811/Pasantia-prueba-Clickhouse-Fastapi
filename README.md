@@ -12,7 +12,7 @@ Ejecuta `docker-compose build` para levantar los servicios.
 3. Accede a `http://localhost:8000/consulta_clickhouse` para interactuar con el API del microservicio mostrando la base de datos clickhouse.
 Nota: esperar unos segundos que se descarge toda la base de datos al iniciar el click house
 
-![servicio fast api](.\imagenes\8000.PNG)
+![servicio fast api](./imagenes/8000.PNG)
 ## Video demostrativo 
 `https://espolec-my.sharepoint.com/:v:/g/personal/erifcamp_espol_edu_ec/ER-gVhQlpfpFiLWyyVh9_XsBSx9vL3Y7mHOQRZNTl5BfvQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=mIRKZX`
 
