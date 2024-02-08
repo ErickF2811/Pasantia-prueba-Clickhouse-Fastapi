@@ -87,7 +87,7 @@ async def consulta_clickhouse(request: Request,
                               pickup_date: str = Query(default=None, description="Fecha de recogida")):
     try:
         offset = (page - 1) * per_page
-        socket.socket().connect(('pasantia-prueba-clickhouse-fastapi-clickhouse-1', 8123))
+        socket.socket().connect(('pasantia-prueba-clickhouse-fastapi_clickhouse_1', 8123))
         print("Conexión establecida correctamente")
 
         client = clickhouse_connect.get_client(host='clickhouse', username='default', password='')
