@@ -52,8 +52,7 @@ ORDER BY pickup_datetime;
 
 
 
-INSERT INTO trips
-SELECT * FROM s3(
+INSERT INTO trips SELECT * FROM s3(
     'https://datasets-documentation.s3.eu-west-3.amazonaws.com/nyc-taxi/trips_{1..2}.gz',
     'TabSeparatedWithNames', "trip_id UInt32,
     vendor_id Enum8('1' = 1, '2' = 2, '3' = 3, '4' = 4, 'CMT' = 5, 'VTS' = 6, 'DDS' = 7, 'B02512' = 10, 'B02598' = 11, 'B02617' = 12, 'B02682' = 13, 'B02764' = 14, '' = 15),
