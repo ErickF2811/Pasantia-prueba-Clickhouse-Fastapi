@@ -6,7 +6,7 @@ Entendido. Voy a relacionar cada componente con los requerimientos establecidos 
 
 1. Clona este repositorio.
 ### Ejecucion de programa 
-1. Ejecuta `docker-compose build` para levantar los servicios.
+1. Ejecuta `docker-compose build` para construir los servicios.
 
 2. Ejecuta `docker-compose up -d` para levantar los servicios.
 
@@ -41,3 +41,6 @@ El microservicio implementa una actividad programada para enviar el total de reg
 ### 4. API REST del microservicio
 
 El archivo `main.py` contiene el código del microservicio FastAPI. Define los endpoints del API REST, incluyendo la consulta de carreras realizadas y el número diario de recogidas por barrio, como se solicita en los requerimientos.
+
+### 5. Link de telegram
+`https://t.me/+RMCPos5LmM5kZDIx`
