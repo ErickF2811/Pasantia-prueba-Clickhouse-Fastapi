@@ -9,8 +9,12 @@ Entendido. Voy a relacionar cada componente con los requerimientos establecidos 
 1. Ejecuta `docker-compose build` para levantar los servicios.
 
 2. Ejecuta `docker-compose up -d` para levantar los servicios.
-3. Accede a `http://localhost:8000/` para interactuar con el API del microservicio.
-3. Accede a `http://localhost:8000/consulta_clickhouse` para interactuar con el API del microservicio mostrando la base de datos clickhouse.
+
+3. Accede a `http://localhost:8123/` comprobar coneccion con Clickhouse
+
+4. Accede a `http://localhost:8000/` para interactuar con el API del microservicio.
+
+5. Accede a `http://localhost:8000/consulta_clickhouse` para interactuar con el API del microservicio mostrando la base de datos clickhouse.
 Nota: esperar unos segundos que se descarge toda la base de datos al iniciar el click house
 
 ![servicio fast api](./imagenes/8000.PNG)
@@ -37,12 +41,3 @@ El microservicio implementa una actividad programada para enviar el total de reg
 ### 4. API REST del microservicio
 
 El archivo `main.py` contiene el código del microservicio FastAPI. Define los endpoints del API REST, incluyendo la consulta de carreras realizadas y el número diario de recogidas por barrio, como se solicita en los requerimientos.
-
-
-
-
-### 5. Manejo adecuado de secretos y datos sensibles
-
-Se debe tener especial cuidado en el manejo de secretos y datos sensibles en la implementación. Esto implica asegurar que las credenciales y otros datos confidenciales estén protegidos y no se expongan accidentalmente.
-
-
