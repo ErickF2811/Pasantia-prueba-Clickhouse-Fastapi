@@ -47,7 +47,7 @@ def enviar_resultado_bot():
         
         # Enviar el mensaje al grupo de Telegram
         
-        requests.post(f'https://api.telegram.org/bot6444843662:AAE2TciYCt1jnjNy-pgjM9IL8QaoG_EfXqc/sendMessage?chat_id=-1002122438815&text=Hola esta es la cantidad actual de datos en el DB {message}')
+        requests.post(f'https://api.telegram.org/bot6762754074:AAGYadTzU0lZaMDsZ8r0FdVckhfWN0YVx68/sendMessage?chat_id=-1002122438815&text=Hola esta es la cantidad actual de datos en el DB {message}')
         print("Mensaje enviado correctamente")
            
     except Exception as e:
