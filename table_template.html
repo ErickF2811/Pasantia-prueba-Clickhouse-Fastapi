@@ -1,19 +1,29 @@
-<!-- table_template.html -->
 
-<table border='1'>
-    <tr>
-        <th>Pickup Date</th>
-        <th>Pickup NTANAME</th>
-        <th>Number of Trips</th>
-    </tr>
-    {{table_rows}}
-    
-</table>
+  <!-- table_template.html -->
 
-<p>
-    {{link}}
-</p>
-
-<p>
-    {{link2}}
-</p>
+<form action="/consulta_clickhouse" method="get">
+    <label for="pickup_ntaname">Selecciona un barrio:</label>
+    <select id="pickup_ntaname" name="pickup_ntaname">
+      <option value="">Todos los barrios</option>
+      {{ barrio_options }}
+    </select>
+    <input type="submit" value="Filtrar">
+  </form>
+  
+  <table border='1'>
+      <tr>
+          <th>Pickup Date</th>
+          <th>Pickup NTANAME</th>
+          <th>Number of Trips</th>
+      </tr>
+      {{ table_rows }}
+  </table>
+  
+  <p>
+      {{ link }}
+  </p>
+  
+  <p>
+      {{ link2 }}
+  </p>
+  
