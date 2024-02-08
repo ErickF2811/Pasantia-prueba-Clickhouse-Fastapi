@@ -21,6 +21,8 @@ Nota: esperar unos segundos que se descarge toda la base de datos al iniciar el 
 
 El servicio ClickHouse se configura en el archivo `docker-compose.yml`, donde se especifica la imagen a utilizar y se mapean los puertos 8123 y 9000 para la comunicación. Además, se utiliza un volumen para cargar el script SQL que inicializa la base de datos.
 
+![servicio fast api](./imagenes/8000.PNG)
+
 ### 2. Cargar datos de ejemplo
 
 El script SQL `script.sql` contiene las instrucciones para crear la tabla `trips` en ClickHouse y cargar los datos de ejemplo. Esta tabla se utiliza para almacenar información sobre viajes.
@@ -39,6 +41,4 @@ El archivo `main.py` contiene el código del microservicio FastAPI. Define los e
 
 Se debe tener especial cuidado en el manejo de secretos y datos sensibles en la implementación. Esto implica asegurar que las credenciales y otros datos confidenciales estén protegidos y no se expongan accidentalmente.
 
-## Contribución
 
-Las contribuciones son bienvenidas. Si tienes sugerencias o encuentras algún problema, por favor abre un *issue*.
